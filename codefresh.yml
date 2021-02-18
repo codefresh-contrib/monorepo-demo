@@ -8,9 +8,8 @@ steps:
   clone:
     title: "Cloning the monorepo"
     type: "git-clone"
-    repo: "guysalton-codefresh/monorepo-demo"
-    revision: "${{CF_BRANCH}}"
-    git: "github"
+    repo: '${{CF_REPO_OWNER}}/${{CF_REPO_NAME}}'
+    revision: '${{CF_REVISION}}'
     stage: "clone"
 
   build:
